@@ -11,22 +11,7 @@ namespace Mhasasneh.Foundation.Core.Settings.Migrations
         private static volatile IMigrationEnablingSettings _current;
 
         #region public properties
-        public bool EnableNewsMigration { get; private set; }
-        public bool EnableCountryMigration { get; private set; }
-        public bool EnableAnnouncementMigration { get; private set; }
-        public bool EnableFaqMigration { get; private set; }
-        public bool EnableLoungeMigration { get; private set; }
-        public bool EnableAirportsMigration { get; private set; }
-        public bool EnableOfferMigration { get; private set; }
-        /// <summary>
-        /// EnableForeignMissionsMigration
-        /// </summary>
-        public bool EnableForeignMissionsMigration { get; private set; }
-        public bool EnableAdvancedArticlesMigration { get; private set; }
-        public bool EnablePageTeaserMigration { get; private set; }
-        public bool EnablePromotionsMigration { get; private set; }
-        public bool EnableOfficesMigration { get; private set; }
-        public bool EnableEmbassyMigration { get; private set; }
+        public bool EnableSolrMigration { get; private set; }
         #endregion
 
         /// <summary>

@@ -5,6 +5,6 @@
         /// <summary>
         /// The configuration tree tags
         /// </summary>
-        public const string ConfigurationNodes = "settings/SaudiAirlines/Services/MigrationEnablingSettings";
+        public const string ConfigurationNodes = "settings/Mhasasneh/Services/MigrationEnablingSettings";
     }
 }

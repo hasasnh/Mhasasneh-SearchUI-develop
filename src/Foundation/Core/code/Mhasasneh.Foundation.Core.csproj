@@ -330,7 +330,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\include\Core\Tanasuk.LogEntry.Settings.config" />
+    <Content Include="App_Config\include\Core\Mhasasneh.LogEntry.Settings.config" />
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>

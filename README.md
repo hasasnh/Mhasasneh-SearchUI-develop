@@ -181,7 +181,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mohannad Alhasasneh - [@MohannadAlhasa2](https://twitter.com/MohannadAlhasa2) - hasasnh@hotmail.com
 
-Project Link: [https://github.com/jaffal83/TripleM-SearchUI](https://github.com/jaffal83/TripleM-SearchUI)
+Project Link: [https://github.com/hasasnh/Mhasasneh-SearchUI-develop)
 
 
 
