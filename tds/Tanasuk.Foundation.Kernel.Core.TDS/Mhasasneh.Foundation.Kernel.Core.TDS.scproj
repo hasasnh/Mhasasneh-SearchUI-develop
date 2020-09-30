@@ -1,0 +1,73 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>02aa61a0-c1ab-4b09-8bec-f8ffcaef313f</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>SaudiAirlines.Foundation.Kernel.Core.TDS</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
+    <AssemblyName>SaudiAirlines.Foundation.Kernel.Core.TDS</AssemblyName>
+    <Name>Mhasasneh.Foundation.Kernel.Core.TDS</Name>
+    <RootNamespace>SaudiAirlines.Foundation.Kernel.Core.TDS</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>core</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+    <SourceWebVirtualPath>/TripleM.Web.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{724b4cc1-8eac-4240-bc33-3c485670505e}|src\Project\Web\code\TripleM.Web.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\src\Project\Web\code</SourceWebPhysicalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\SC92sc.dev.local</SitecoreDeployFolder>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>True</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+    <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
+    <SitecoreWebUrl>http://sc92sc.dev.local</SitecoreWebUrl>
+    <SitecoreAccessGuid>5aa99fdd-afec-4071-9ada-2811355c7c57</SitecoreAccessGuid>
+    <PackageName>SaudiAirlines.Foundation.Kernel.Core.TDS</PackageName>
+    <PackageAuthor />
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <BuildWebDeploy>False</BuildWebDeploy>
+    <WebDeployPackageCodeAndItemOptions>CodeAndItems</WebDeployPackageCodeAndItemOptions>
+    <WebDeployPackageName>SaudiAirlines.Foundation.Kernel.Core.TDS</WebDeployPackageName>
+    <WebDeployAppendDateAndTimeToPackageName>False</WebDeployAppendDateAndTimeToPackageName>
+    <ContinueOnItemDeployError>False</ContinueOnItemDeployError>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Project\Web\code\TripleM.Web.csproj">
+      <Project>{724b4cc1-8eac-4240-bc33-3c485670505e}</Project>
+      <Name>TripleM.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>

@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {2F4DD90D-E27F-42A2-9109-5C3004172A4B}
+database: master
+path: /sitecore/content/TripleM/TripleM/News Search Settings/Scopes
+parent: {BB1DF071-1DB8-418D-8EDA-C14CE47CE9D4}
+name: Scopes
+master: {00000000-0000-0000-0000-000000000000}
+template: {7A460883-CD62-42EF-8A69-507577189961}
+templatekey: Scopes
+created: 20191005T123614Z
+
+----version----
+language: en
+version: 1
+revision: 0ae3c1ea-0899-4c0e-bde9-5bf9669fbf23
+
+----field----
+field: {4863C6B1-1602-4594-A1A3-F65B6DB4DE4C}
+name: Scopes
+key: scopes
+content-length: 38
+
+{A18BB401-FE1E-4A45-893D-C97954B7CE41}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191005T123614Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0ae3c1ea-0899-4c0e-bde9-5bf9669fbf23
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191005T124657Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

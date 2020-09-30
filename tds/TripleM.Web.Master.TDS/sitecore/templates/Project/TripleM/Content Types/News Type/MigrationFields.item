@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {5F446EC1-946A-4A92-8809-9371E79B011D}
+database: master
+path: /sitecore/templates/Project/TripleM/Content Types/News Type/MigrationFields
+parent: {AAD056AF-2DFA-4ABE-888D-1C586BACC8B5}
+name: MigrationFields
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+created: 20190703T124958Z
+
+----version----
+language: en
+version: 1
+revision: 68fae0bf-f708-4715-890e-6480f0aff584
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190620T103351Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+68fae0bf-f708-4715-890e-6480f0aff584
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190620T122003Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

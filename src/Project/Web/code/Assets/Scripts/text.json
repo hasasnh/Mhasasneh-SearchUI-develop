@@ -1,0 +1,261 @@
+{
+    "SearchModel": {
+        "Value": [
+            "Name",
+            "Title",
+            "FirestName",
+            "SecoundName",
+            "SmallDesc"
+        ],
+        "Scopes": [
+            "{A18BB401-FE1E-4A45-893D-C97954B7CE41}"
+        ],
+        "Facets": [
+            "Category"
+        ],
+        "Queries": {
+            "{DE0AB6D7-F8D9-46A1-B8BC-BBF18FC74882}": "CustomDate<=10/18/2019",
+            "{0DBE8A42-D852-4FF0-B28E-68E2CDF4541D}": "Price=10",
+            "{966D4814-211A-4FC5-8C25-A4DC8D287F5B}": "{6C6EB144-3F57-45A7-805B-C4E2C879EBE4}"
+        }
+    },
+    "SearchResultItems": [{
+            "CreatedDate": "2019-09-28T09:48:00Z",
+            "Url": null,
+            "Datasource": "sitecore",
+            "CreatedBy": "sitecoreadmin",
+            "ItemId": "adc7b9ba-af24-4433-8705-fe8bf04c89ce",
+            "Language": "en",
+            "Name": "News3",
+            "Title": "News3 Title",
+            "FirstName": "Mohannad",
+            "SecoundName": "Hasasneh",
+            "SmallDesc": "Some Small Description",
+            "FacetsName": "historical",
+            "Path": "/sitecore/content/home/news/news3",
+            "Paths": [
+                "0de95ae4-41ab-4d01-9eb0-67441b7c2450",
+                "110d559f-dea5-42ea-9c1c-8a5df7e70ef9",
+                "11111111-1111-1111-1111-111111111111",
+                "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+                "adc7b9ba-af24-4433-8705-fe8bf04c89ce"
+            ],
+            "Parent": "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+            "TemplateId": "6c6eb144-3f57-45a7-805b-c4e2c879ebe4",
+            "TemplateName": "News",
+            "DatabaseName": "master",
+            "Updated": "2019-10-26T16:11:56Z",
+            "UpdatedBy": "sitecoreadmin",
+            "Content": null,
+            "Semantics": null,
+            "LockOwner": "",
+            "Location": null,
+            "IsPointOfInterest": false,
+            "Uri": {
+                "DatabaseName": "master",
+                "Path": "{adc7b9ba-af24-4433-8705-fe8bf04c89ce}",
+                "Language": {
+                    "Name": "en"
+                },
+                "Version": {
+                    "Number": 1
+                },
+                "ItemID": "adc7b9ba-af24-4433-8705-fe8bf04c89ce"
+            },
+            "Version": "1"
+        },
+        {
+            "CreatedDate": "2019-09-28T09:48:00Z",
+            "Url": null,
+            "Datasource": "sitecore",
+            "CreatedBy": "sitecoreadmin",
+            "ItemId": "a3ec35b6-40a1-40b0-8f3d-dabe2772c288",
+            "Language": "en",
+            "Name": "News5",
+            "Title": "News5 Title",
+            "FirstName": "Majdi",
+            "SecoundName": "Shaltaf",
+            "SmallDesc": "Some Small Description",
+            "FacetsName": "historical",
+            "Path": "/sitecore/content/home/news/news5",
+            "Paths": [
+                "0de95ae4-41ab-4d01-9eb0-67441b7c2450",
+                "110d559f-dea5-42ea-9c1c-8a5df7e70ef9",
+                "11111111-1111-1111-1111-111111111111",
+                "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+                "a3ec35b6-40a1-40b0-8f3d-dabe2772c288"
+            ],
+            "Parent": "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+            "TemplateId": "6c6eb144-3f57-45a7-805b-c4e2c879ebe4",
+            "TemplateName": "News",
+            "DatabaseName": "master",
+            "Updated": "2019-10-26T16:12:03Z",
+            "UpdatedBy": "sitecoreadmin",
+            "Content": null,
+            "Semantics": null,
+            "LockOwner": "",
+            "Location": null,
+            "IsPointOfInterest": false,
+            "Uri": {
+                "DatabaseName": "master",
+                "Path": "{a3ec35b6-40a1-40b0-8f3d-dabe2772c288}",
+                "Language": {
+                    "Name": "en"
+                },
+                "Version": {
+                    "Number": 1
+                },
+                "ItemID": "a3ec35b6-40a1-40b0-8f3d-dabe2772c288"
+            },
+            "Version": "1"
+        },
+        {
+            "CreatedDate": "2019-09-28T09:47:02Z",
+            "Url": null,
+            "Datasource": "sitecore",
+            "CreatedBy": "sitecoreadmin",
+            "ItemId": "849690bb-07a0-4cf8-b8e4-a3a39844d456",
+            "Language": "en",
+            "Name": "News1",
+            "Title": "News1 Title",
+            "FirstName": "Haifa",
+            "SecoundName": "Samara",
+            "SmallDesc": "Some Small Description",
+            "FacetsName": "historical",
+            "Path": "/sitecore/content/home/news/news1",
+            "Paths": [
+                "0de95ae4-41ab-4d01-9eb0-67441b7c2450",
+                "110d559f-dea5-42ea-9c1c-8a5df7e70ef9",
+                "11111111-1111-1111-1111-111111111111",
+                "849690bb-07a0-4cf8-b8e4-a3a39844d456",
+                "a18bb401-fe1e-4a45-893d-c97954b7ce41"
+            ],
+            "Parent": "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+            "TemplateId": "6c6eb144-3f57-45a7-805b-c4e2c879ebe4",
+            "TemplateName": "News",
+            "DatabaseName": "master",
+            "Updated": "2019-10-26T09:16:14Z",
+            "UpdatedBy": "sitecoreadmin",
+            "Content": null,
+            "Semantics": null,
+            "LockOwner": "",
+            "Location": null,
+            "IsPointOfInterest": false,
+            "Uri": {
+                "DatabaseName": "master",
+                "Path": "{849690bb-07a0-4cf8-b8e4-a3a39844d456}",
+                "Language": {
+                    "Name": "en"
+                },
+                "Version": {
+                    "Number": 1
+                },
+                "ItemID": "849690bb-07a0-4cf8-b8e4-a3a39844d456"
+            },
+            "Version": "1"
+        },
+        {
+            "CreatedDate": "2019-09-28T09:48:00Z",
+            "Url": null,
+            "Datasource": "sitecore",
+            "CreatedBy": "sitecoreadmin",
+            "ItemId": "17dceeb8-1a0a-4696-8e54-78c8d1332965",
+            "Language": "en",
+            "Name": "News2",
+            "Title": "News2 Title",
+            "FirstName": "Raed",
+            "SecoundName": "Abu-Ghaush",
+            "SmallDesc": "Some Small Description",
+            "FacetsName": "sports",
+            "Path": "/sitecore/content/home/news/news2",
+            "Paths": [
+                "0de95ae4-41ab-4d01-9eb0-67441b7c2450",
+                "110d559f-dea5-42ea-9c1c-8a5df7e70ef9",
+                "11111111-1111-1111-1111-111111111111",
+                "17dceeb8-1a0a-4696-8e54-78c8d1332965",
+                "a18bb401-fe1e-4a45-893d-c97954b7ce41"
+            ],
+            "Parent": "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+            "TemplateId": "6c6eb144-3f57-45a7-805b-c4e2c879ebe4",
+            "TemplateName": "News",
+            "DatabaseName": "master",
+            "Updated": "2019-10-26T09:16:17Z",
+            "UpdatedBy": "sitecoreadmin",
+            "Content": null,
+            "Semantics": null,
+            "LockOwner": "",
+            "Location": null,
+            "IsPointOfInterest": false,
+            "Uri": {
+                "DatabaseName": "master",
+                "Path": "{17dceeb8-1a0a-4696-8e54-78c8d1332965}",
+                "Language": {
+                    "Name": "en"
+                },
+                "Version": {
+                    "Number": 1
+                },
+                "ItemID": "17dceeb8-1a0a-4696-8e54-78c8d1332965"
+            },
+            "Version": "1"
+        },
+        {
+            "CreatedDate": "2019-09-28T09:48:00Z",
+            "Url": null,
+            "Datasource": "sitecore",
+            "CreatedBy": "sitecoreadmin",
+            "ItemId": "71980fa8-83bf-4f63-afc8-8266dca97c36",
+            "Language": "en",
+            "Name": "News6",
+            "Title": "News6 Title",
+            "FirstName": "Ibrahim",
+            "SecoundName": "Saleh",
+            "SmallDesc": "Some Small Description",
+            "FacetsName": "historical",
+            "Path": "/sitecore/content/home/news/news6",
+            "Paths": [
+                "0de95ae4-41ab-4d01-9eb0-67441b7c2450",
+                "110d559f-dea5-42ea-9c1c-8a5df7e70ef9",
+                "11111111-1111-1111-1111-111111111111",
+                "71980fa8-83bf-4f63-afc8-8266dca97c36",
+                "a18bb401-fe1e-4a45-893d-c97954b7ce41"
+            ],
+            "Parent": "a18bb401-fe1e-4a45-893d-c97954b7ce41",
+            "TemplateId": "6c6eb144-3f57-45a7-805b-c4e2c879ebe4",
+            "TemplateName": "News",
+            "DatabaseName": "master",
+            "Updated": "2019-10-26T09:17:13Z",
+            "UpdatedBy": "sitecoreadmin",
+            "Content": null,
+            "Semantics": null,
+            "LockOwner": "",
+            "Location": null,
+            "IsPointOfInterest": false,
+            "Uri": {
+                "DatabaseName": "master",
+                "Path": "{71980fa8-83bf-4f63-afc8-8266dca97c36}",
+                "Language": {
+                    "Name": "en"
+                },
+                "Version": {
+                    "Number": 1
+                },
+                "ItemID": "71980fa8-83bf-4f63-afc8-8266dca97c36"
+            },
+            "Version": "1"
+        }
+    ],
+    "SearchResultCount": 5,
+    "Facets": [{
+        "Name": "category",
+        "Values": [{
+                "Name": "historical",
+                "AggregateCount": 5
+            },
+            {
+                "Name": "sports",
+                "AggregateCount": 3
+            }
+        ]
+    }]
+}

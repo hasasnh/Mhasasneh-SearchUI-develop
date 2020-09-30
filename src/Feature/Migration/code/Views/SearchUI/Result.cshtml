@@ -1,0 +1,36 @@
+﻿@model TripleM.Feature.SearchUI.Models.SearchUIModel
+
+<div class="table-wrapper">
+    <h2>Search Result</h2>
+    <table class="fl-table">
+        <thead>
+            <tr>
+                @foreach (var result in Model.SearchModel.Value)
+                {
+                    <th>@result</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var filed in Model.SearchResultItems)
+            {
+                <tr>
+                    @foreach (var result in Model.SearchModel.Value)
+                    {
+                        foreach (var dec in Model.HighlightResult)
+                        {
+                            if (dec.Key == result.ToLower())
+                            {
+                               <td>@Html.Raw(@dec.Value)</td>
+                            }
+                            else
+                            {
+                                <td>@filed.Fields[result.ToLower()]</td>
+                            }
+                        }
+                    }
+                </tr>
+            }
+        <tbody>
+    </table>
+</div>

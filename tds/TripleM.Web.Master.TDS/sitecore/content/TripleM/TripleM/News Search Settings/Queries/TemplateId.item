@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {9E3EE321-58BA-4A8A-B3B2-1CB31A9E04F4}
+database: master
+path: /sitecore/content/TripleM/TripleM/News Search Settings/Queries/TemplateId
+parent: {F8F8DA84-B677-4B7B-BB87-FBF27010FE86}
+name: TemplateId
+master: {00000000-0000-0000-0000-000000000000}
+template: {966D4814-211A-4FC5-8C25-A4DC8D287F5B}
+templatekey: TemplateId
+created: 20191019T173442Z
+
+----version----
+language: en
+version: 1
+revision: f05a8f52-d520-4b9a-8474-6ad86c5b1a73
+
+----field----
+field: {35B73413-7223-46AE-B87F-31DD01964CA4}
+name: Value
+key: value
+content-length: 38
+
+{6C6EB144-3F57-45A7-805B-C4E2C879EBE4}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191019T173442Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f05a8f52-d520-4b9a-8474-6ad86c5b1a73
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191019T173542Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

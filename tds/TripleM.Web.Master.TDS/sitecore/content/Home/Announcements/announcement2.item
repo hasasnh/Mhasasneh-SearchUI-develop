@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {F50C5C38-E347-477A-B23A-9C682F9820C4}
+database: master
+path: /sitecore/content/Home/Announcements/announcement2
+parent: {9A791D93-FA73-4A41-89B2-746F274F2B76}
+name: announcement2
+master: {00000000-0000-0000-0000-000000000000}
+template: {AAD056AF-2DFA-4ABE-888D-1C586BACC8B5}
+templatekey: News Type
+created: 20191011T104953Z
+
+----version----
+language: en
+version: 1
+revision: b964dacd-8d3b-4cf4-8a90-bd8d471d0a8a
+
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 13
+
+announcement1
+----field----
+field: {17573968-AD87-4CB6-B65A-991B8409A102}
+name: Introduction
+key: introduction
+content-length: 140
+
+Airlines operating at Paris CDG airport to reduce their operations by 50% due to the strike on Air Traffic Control from 11 June till 14 June
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191011T104437Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b964dacd-8d3b-4cf4-8a90-bd8d471d0a8a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191011T104958Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

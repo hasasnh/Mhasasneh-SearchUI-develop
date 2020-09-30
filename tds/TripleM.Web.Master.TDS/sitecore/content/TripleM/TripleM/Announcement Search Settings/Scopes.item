@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {EDEDDDE6-086D-4D22-B7B7-E8A7BA4D1FBD}
+database: master
+path: /sitecore/content/TripleM/TripleM/Announcement Search Settings/Scopes
+parent: {8B58A926-F1E5-48EA-81A5-A67DCB1F721B}
+name: Scopes
+master: {00000000-0000-0000-0000-000000000000}
+template: {7A460883-CD62-42EF-8A69-507577189961}
+templatekey: Scopes
+created: 20191011T105228Z
+
+----version----
+language: en
+version: 1
+revision: bbe2d951-7c77-4519-b803-8eb9b216aeef
+
+----field----
+field: {4863C6B1-1602-4594-A1A3-F65B6DB4DE4C}
+name: Scopes
+key: scopes
+content-length: 38
+
+{9A791D93-FA73-4A41-89B2-746F274F2B76}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191005T123614Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bbe2d951-7c77-4519-b803-8eb9b216aeef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191011T110150Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

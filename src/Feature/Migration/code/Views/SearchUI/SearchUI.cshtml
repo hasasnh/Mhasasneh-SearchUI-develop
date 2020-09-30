@@ -1,0 +1,121 @@
+﻿
+@model TripleM.Feature.SearchUI.Models.SearchUIModel
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Assets/Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="~/Assets/Scripts/datatables.min.js"></script>
+    <script src="~/Assets/Scripts/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container page-container">
+        <div class="searchBox">
+            <h2>How can we help?</h2>
+            <form action="/SearchUI/SearchUI" method="post">
+                <div class="form-group">
+                    <input class="searchInput form-control" id="customSearchInput" name="search" type="text" placeholder="What are you searching for?">
+                    <button class="searchButton btn btn-primary" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <aside class="facets col-3">
+                @if (Model?.Facets != null)
+                {
+                    foreach (var facet in Model?.Facets)
+                    {
+                        <h3>@facet.Name</h3>
+                        foreach (var f in facet?.Values)
+                        {
+                            <label for="historical">
+                                <input name="historical" id="historical" type="checkbox">@f.Name<span class="badge badge-secondary">@f.AggregateCount</span>
+                            </label>
+                        }
+                    }
+                }
+            </aside>
+            <div class="page-content col-9">
+                <div class="table-wrapper">
+                    <h4>Search Result</h4>
+                    <div class="dataTables_wrapper dt-bootstrap4 no-footer" id="DataTables_Table_0_wrapper">
+                        <div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" class="custom-select custom-select-sm form-control form-control-sm" aria-controls="DataTables_Table_0"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div class="dataTables_filter" id="DataTables_Table_0_filter"><label>Search:<input class="form-control form-control-sm" aria-controls="DataTables_Table_0" type="search" placeholder=""></label></div></div></div><div class="row">
+                            <div class="col-sm-12">
+                                <table class="fl-table table dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                    <thead>
+                                        <tr role="row">
+                                            @foreach (var result in Model?.SearchModel?.Value)
+                                            {
+                                                <th tabindex="0" class="sorting_asc" aria-controls="DataTables_Table_0" style="width: 72.14px;" aria-label="Name: activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">@result</th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var filed in Model?.SearchResultItems)
+                                        {
+                                            <tr class="odd" role="row" data-facet-name="historical">
+                                                @foreach (var result in Model?.SearchModel?.Value)
+                                                {
+                                                    if (Model?.HighlightResult != null)
+                                                    {
+                                                        foreach (var dec in Model?.HighlightResult)
+                                                        {
+                                                            if (dec.Key == result.ToLower())
+                                                            {
+                                                                <td>@Html.Raw(@dec.Value)</td>
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>@filed.Fields[result.ToLower()]</td>
+                                                    }
+                                                }
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 3 of 5 entries</div>
+                            </div>
+                            <div class="col-sm-12 col-md-7">
+                                <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                                    <ul class="pagination">
+                                        <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous">
+                                            <a tabindex="0" class="page-link" aria-controls="DataTables_Table_0" href="#" data-dt-idx="0">Previous</a>
+                                        </li>
+                                        <li class="paginate_button page-item active">
+                                            <a tabindex="0" class="page-link" aria-controls="DataTables_Table_0" href="#" data-dt-idx="1">1</a>
+                                        </li>
+                                        <li class="paginate_button page-item ">
+                                            <a tabindex="0" class="page-link" aria-controls="DataTables_Table_0" href="#" data-dt-idx="2">2</a>
+                                        </li>
+                                        <li class="paginate_button page-item next" id="DataTables_Table_0_next">
+                                            <a tabindex="0" class="page-link" aria-controls="DataTables_Table_0" href="#" data-dt-idx="3">Next</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

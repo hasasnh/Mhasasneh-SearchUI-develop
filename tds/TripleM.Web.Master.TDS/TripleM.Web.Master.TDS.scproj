@@ -1,0 +1,172 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f5366928-4ba2-4c3a-849e-003429d86fa9</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>TripleM.Web.Master.TDS</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
+    <AssemblyName>TripleM.Web.Master.TDS</AssemblyName>
+    <Name>TripleM.Web.Master.TDS</Name>
+    <RootNamespace>TripleM.Web.Master.TDS</RootNamespace>
+    <SourceWebVirtualPath>/TripleM.Web.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{724b4cc1-8eac-4240-bc33-3c485670505e}|src\Project\Web\code\TripleM.Web.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\src\Project\Web\code</SourceWebPhysicalPath>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>True</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+    <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
+    <SitecoreWebUrl>http://sc92sc.dev.local</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\inetpub\wwwroot\SC92sc.dev.local</SitecoreDeployFolder>
+    <SitecoreAccessGuid>5aa99fdd-afec-4071-9ada-2811355c7c57</SitecoreAccessGuid>
+    <PackageName>TripleM.Web.Master.TDS.zip</PackageName>
+    <PackageAuthor />
+    <PackagePublisher />
+    <PackageVersion />
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <BuildWebDeploy>False</BuildWebDeploy>
+    <WebDeployPackageCodeAndItemOptions>CodeAndItems</WebDeployPackageCodeAndItemOptions>
+    <WebDeployPackageName>TripleM.Web.Master.TDS</WebDeployPackageName>
+    <WebDeployAppendDateAndTimeToPackageName>False</WebDeployAppendDateAndTimeToPackageName>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\TripleM.Web.Master.TDS_Debug.xml</ValidationSettingsFilePath>
+    <ContinueOnItemDeployError>False</ContinueOnItemDeployError>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Project\Web\code\TripleM.Web.csproj">
+      <Project>{724b4cc1-8eac-4240-bc33-3c485670505e}</Project>
+      <Name>TripleM.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\content.item"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Announcements.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Announcements\announcement1.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\Announcements\announcement2.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News1.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News2.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News3.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News4.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News5.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\News6.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\Sub News.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\Sub News\News Categories.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\Sub News\News Categories\News Category 1.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\Sub News\News Categories\SubNews10.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Home\News\Sub News\SubNews.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings\Facets.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings\Facets\Name.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings\News Fields Search Result.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings\Scopes.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Announcement Search Settings\ThemeRed.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Home.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Home\SXA News.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Home\SXA News\News1.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\Home\SXA News\News2.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Facets.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Facets\Name.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Facets\Title.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\News Fields Search Result.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Queries.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Queries\Date.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Queries\TemplateId.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\Scopes.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\content\TripleM\TripleM\News Search Settings\ThemeRed.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout.item"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\Project.item"><ItemDeployment>DeployOnce</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Layouts\Project\MainLayout.item"><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Models.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Models\Project.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\content.item"><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\main.item"><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Placeholder Settings\Project.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\layout\Renderings\Project.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\media library.item"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates.item"><ItemDeployment>NeverDeploy</ItemDeployment><ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project.item"><ItemDeployment>AlwaysUpdate</ItemDeployment><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\Data.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\Data\AllowedCountries.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\Data\Body.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\Data\CreationDate.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\Data\Title.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\MigrationFields.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\MigrationFields\ItemID.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\News Article.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\News Article\AllText.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\News Article\Image.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\News Article\Introduction.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Content Types\News Type\News Article\Thumbnail.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\PageTypes.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\PageTypes\News Categories.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\PageTypes\News.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Date.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Date\Query.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Date\Query\Value.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Facets.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Facets\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Filters.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Filters\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Queries.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Queries\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Scopes.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Scopes\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Search Results Fields.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Search Results Fields\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Search Settings.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Search Settings\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\TemplateId.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\TemplateId\Query.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\TemplateId\Query\Value.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Themes.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\TripleM\Search\Themes\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>AlwaysUpdate</ItemDeployment></SitecoreItem>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>

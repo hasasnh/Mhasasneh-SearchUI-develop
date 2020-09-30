@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {F8F8DA84-B677-4B7B-BB87-FBF27010FE86}
+database: master
+path: /sitecore/content/TripleM/TripleM/News Search Settings/Queries
+parent: {BB1DF071-1DB8-418D-8EDA-C14CE47CE9D4}
+name: Queries
+master: {00000000-0000-0000-0000-000000000000}
+template: {66FD1BA5-EEEB-4DB6-BE2A-54FB30D63C6D}
+templatekey: Queries
+created: 20191019T173434Z
+
+----version----
+language: en
+version: 1
+revision: bcae1f29-695f-47be-8b99-f68d8e3d4be8
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191019T173434Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bcae1f29-695f-47be-8b99-f68d8e3d4be8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191019T173434Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

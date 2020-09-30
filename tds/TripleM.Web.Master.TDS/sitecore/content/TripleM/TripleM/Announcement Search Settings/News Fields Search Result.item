@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {2AFF5D2D-DEFC-46CE-B8E0-A6CF17F7FAE1}
+database: master
+path: /sitecore/content/TripleM/TripleM/Announcement Search Settings/News Fields Search Result
+parent: {8B58A926-F1E5-48EA-81A5-A67DCB1F721B}
+name: News Fields Search Result
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A059303-C9F0-422B-87C1-A48CD4E40D29}
+templatekey: Search Results Fields
+created: 20191011T105228Z
+
+----version----
+language: en
+version: 1
+revision: f3ad21d3-2299-4b58-8233-f26cbb4e5313
+
+----field----
+field: {9AE5B412-4A21-4FDF-8788-BBA50921A034}
+name: Value
+key: value
+content-length: 12
+
+Introduction
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191005T122821Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f3ad21d3-2299-4b58-8233-f26cbb4e5313
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191011T105315Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,10 @@
+﻿@Model TripleM.Feature.SearchUI.Models.GlobalErrorModel
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div>An error occured</div>
+}
+else
+{
+    <div>@Model.Message</div>
+}
